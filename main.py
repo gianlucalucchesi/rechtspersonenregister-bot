@@ -36,16 +36,15 @@ class RechtspersonenregisterBot:
         while found is False:
             i += 1
             try:
-                table_element = self.driver.find_element_by_xpath(
+                single_table_element = self.driver.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div/div[1]/div/div/div/table/tbody/tr[" + str(i) + "]/td[1]").text
-                print(table_element)
 
-                words = table_element.split()
+                words = single_table_element.split()
 
                 if self.RPR in words:
                     found = True
                     print("------")
-                    print(table_element)
+                    print(single_table_element)
             except NoSuchElementException:
                 return False
 

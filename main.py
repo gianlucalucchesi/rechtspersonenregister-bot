@@ -65,7 +65,11 @@ class RechtspersonenregisterBot:
 
         sleep(1)
 
+    def close(self):
+        self.driver.close()
+
 
 bot = RechtspersonenregisterBot()
 bot.fill_data(9000, "stropstraat")
 bot.get_rpr_details()
+bot.close()

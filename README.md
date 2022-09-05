@@ -7,4 +7,4 @@ Finds respective Belgian company court based on postal code (and street) on fgov
    1. Open entire folder with VSCode (correct directory will be automatically selected in terminal)
    1. Configure the virtual environment: `$ python3 -m venv venv` creates a virtual environment called "venv"
 3. Download and install Selenium in the project directory via terminal: `$ pip install selenium`
-4. Download and install the correct Chrome Webdriver for your Chrome browser version: `https://sites.google.com/a/chromium.org/chromedriver/downloads`
+4. Download and install the correct Chrome Webdriver for your respective Chrome browser version: `https://sites.google.com/a/chromium.org/chromedriver/downloads`
